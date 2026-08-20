@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style1.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MP3 Player</title>
+</head>
+<body>
+
+<div class="box centre">
+    <div class="box-1 centre">
+        <h4 id="name"></h4>
+        <div class="art">
+            <img class="centre" id="artist" src="./images/" alt="">
+        </div>
+        <div class="art-name">
+            <p class="title">Artist Name - Song Name</p>
+        </div>
+        <div class="prog">
+            <div class="time">
+                <div class="start">
+                    <p id="start">0:00</p>
+                </div>
+                <div class="end">
+                    <p id="end">0:00</p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="lineChild"></div>
+
+            </div>
+        </div>
+        <div class="msc centre">
+            <div class="ctrl centre" onclick="backward()">
+                <i class="fa-solid fa-backward-step"></i>
+            </div>
+            
+            <div class="ctrl centre" id="playsong">
+                 <i class="fa-solid fa-play"></i>
+                 <i class="fa-solid fa-pause none"></i>
+                </div>
+
+                <div class="ctrl centre" onclick="forward()">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <audio src="" class="song"></audio>
+        </div>
+    </div>
+</div>
+
+<script src="app1.js"></script>
+
+</body>
+
+
+</html>
